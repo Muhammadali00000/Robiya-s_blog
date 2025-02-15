@@ -5,12 +5,6 @@ import "./info.scss"
 
 const Info = () => {
 
-  const GitHubIcon = () => { }
-  const LinkedInIcon = () => { }
-  const TelegramIcon = () => { }
-  const YoutubeIcon = () => { }
-
-
   return (
     <>
       <section className="info">
