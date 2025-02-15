@@ -1,0 +1,135 @@
+.excurs {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  display: flex;
+  justify-content: space-between;
+  // gap: 100px;
+
+  margin-top: 70px;
+}
+
+.form-container {
+  flex: 1;
+  
+}
+
+.telegram-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin-top: 40px;
+}
+
+.form-label {
+  width: 500px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #6200ea;
+  border-radius: 25px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+  cursor: pointer;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.form-input:focus {
+  border-color: #3700b3;
+}
+
+.form-button {
+  width: 150px;
+  background-color: #6200ea;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.form-button:hover {
+  background-color: #3700b3;
+}
+
+.thanks-message {
+  margin-top: 10px;
+  font-size: 14px;
+  color: green;
+}
+
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20%;
+}
+
+.contact-image {
+  width: 550px;
+  height: 260px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .excurs {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-items: center;
+    img{
+      width: 100%;
+    }
+  }
+  .contact-image{
+    width: 370px;
+    height: 170px;
+    padding: 0 20px;
+  }
+  .form-input{
+    width: 100%;
+  }
+  .form-container{
+    label{
+      width: 100%;
+    }
+  }
+  .form-button{
+    width: 100%;
+    margin-bottom: 75px;
+  }
+
+  .image-container {
+    padding: 0 8px;
+    margin-left: 0;
+  }
+  .info_link{
+    padding: 0 0;
+  }
+}

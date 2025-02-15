@@ -1,0 +1,105 @@
+.error__title {
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;
+    margin-top: 50px;
+}
+
+.error {
+    height: 53dvh; /* Consider using vh or percentages instead of 'dvh' */
+}
+
+.error_text {
+    font-size: 300px;
+    letter-spacing: -40px;
+    animation: fadeIn 1s ease-in-out;
+    text-align: center;
+}
+
+span {
+    color: #4619FB;
+}
+
+.error__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: -140px;
+    gap: 50px;
+    margin-top: 100px;
+}
+
+.error_btn {
+    width: 200px;
+    border-radius: 50px;
+    padding: 20px;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    border: none;
+    margin-top: -60px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        transform: scale(1.1); 
+        box-shadow: 0px 4px 10px rgba(70, 25, 251, 0.5);
+    }
+}
+
+.error_btn a {
+    text-decoration: none;
+    color: white;
+}
+.vector{
+    animation: fadeIn 1s ease-in-out;
+}
+
+.error__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.error_btn:hover {
+    background-color: #4619FB;
+}
+
+.error_text:hover {
+    color: #4619FB;
+}
+
+@media (max-width: 768px) {
+    .error_text {
+        font-size: 160px; /* Reduce font size on smaller screens */
+        letter-spacing: -20px; /* Reset letter-spacing */
+        
+    }
+
+    .error__content {
+        margin-left: 0; /* Center content */
+        margin-top: 50px; /* Adjust margin */
+        gap: 30px; /* Reduce gap */
+    }
+
+    .error_btn {
+        width: 80%; /* Make button width responsive */
+        padding: 15px; /* Adjust padding */
+        margin-top: 20px; /* Reset margin */
+        text-align: center;
+        margin-right: 65px;
+        
+    }
+    .error__wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+    }
+    .vector{
+        width: 124px;
+        height: 53px;
+        padding-top: 20px;
+    }
+}
